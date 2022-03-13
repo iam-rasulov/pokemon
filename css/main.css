@@ -57,13 +57,43 @@ body{
 
 .candy{
     margin: 10px 0;
-    color: rgb(178, 221, 250);
+    padding-top: 3px;
+    padding-left: 30px;
+    padding-bottom: 3px;
+    color: rgb(58, 4, 4);
+    position: relative;
+}
+.candy::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url(../candy.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 .time{
     margin: 10px 0;
+    padding-top: 3px;
+    padding-left: 30px;
+    padding-bottom: 3px;
     color: rgb(58, 4, 4);
     display: block;
+    position: relative;
+}
+.time::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url(../clock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 .sub-list{
@@ -76,7 +106,7 @@ body{
 }
 
 .sub-item{
-    width: 70px;
+    width: 75px;
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 2px 10px;
